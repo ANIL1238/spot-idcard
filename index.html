@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot-card</title>
+    
+    <style>
+        .cardview{
+            width: 310px;
+            height: 200px;  
+            padding: 50px;
+           border: 3px solid black;
+        }
+        .mainpic{
+                 height:60px;
+                  width:410px;  
+                  margin-left: -50px;  
+                  margin-top: -100px;
+           
+
+        }
+        .addres{
+                  height:50px;
+                  width:399px;  
+                  margin-left: -80px;
+                  margin-top:-10px;
+                
+
+           
+          
+
+          
+   
+                 
+        }
+        @media print {
+  #main{
+    display:none;
+  }
+  #btn{
+    display:none;
+  }
+  #inphoto{
+    display:none;
+  }
+}
+@media print {
+  #down{
+    display:none;
+  }
+}
+   
+
+    </style>
+        <form id="main">
+            <h1>Spot-id-card</h1>
+            <input type="text" id="inname" placeholder="enter name"><br>
+            <input type="text" id="inreg" placeholder="enter regnumber"><br>
+            <input type="taxt" id="indate" placeholder="enter date"><br>
+            <input type="text" id="indept" placeholder="enter dept"><br>
+            <input type="text" id="inyera" placeholder="NUMBER"><br>
+            
+        </form>
+        <button id="btn" onClick="myfun()" >sumbit</button>
+        <input type="file" id="inphoto" style="background:aqua"  onchange="loadImage(event)" ><br>
+        
+       <br>
+
+       <div class="cardview">
+       
+        <header >
+
+            <img src="https://www.lendi.org/images/demo/default/logo/logo.png" class="mainpic" >
+          
+        </header>
+        <hr size="3" color="green"  width="100%" height="">
+
+        
+        <img src="" id="imgDisplayed"  style="width:100px; height:120px; float:left ; margin-top: 15px; margin-left: -10px;">
+        <div>
+        <ul style="list-style-type: none;"  class="ulm">
+            <h5><li id="name" style="list-style-type: none;">Student Name:</li></h5>
+            <h5><li  id="reg"style="list-style-type: none;"> Reg NO:</li></h5>
+            
+            <h5><li id="dept" style="list-style-type: none;" >Branch:</li></h5>
+            <h5><li id="year" style="list-style-type: none;">Academic Year</li></h5>
+        <h5></h5>
+        <footer >
+           
+            <img src="lendiadress.png" class="addres">
+           
+
+           
+       </footer>
+        </div>
+       
+        <button id="down"    onclick="window.print();">Download</button>
+       </div>
+      
+    </textarea>
+    
+        
+      
+   
+    
+    
+    
+   
+    </body>
+   
+    <script src="idcard.js">
+    
+    </script>
+    </html>  
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
