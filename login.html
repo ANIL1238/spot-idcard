@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lendi onlie id card</title>
+</head>
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv6YZ47pdgt3jjhUFZJbZRpWFwCfcodxo3Vg&usqp=CAU" type="image/" sizes="16x16">
+<script>
+    function passvalues()
+    {
+        var fname=document.getElementById("uname").value;
+        localStorage.setItem("textvalue",fname);
+        return false;
+    }
+function mmfun(){
+    var name= document.getElementById("txt").value;
+    var pass=document.getElementById("password").value;
+
+    if (name!="lendi@id"){
+        alert("Please enter valid password and user name", name,pass);
+    }
+}
+</script>
+<style>
+     @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+  
+    .color{
+        background-color: #4285F4;
+
+        width: 100%;
+        height: auto;     
+
+       
+    }
+    .img{
+         
+          color: white;
+          background-color:#4285F4 ;
+    }
+    
+  
+  a{      
+     margin-top: -44px;
+     margin-right: 3px;
+  }
+   
+
+body{  
+    margin: 0;  
+    padding: 0;  
+    background-color:whitesmoke;  
+    font-family: 'Arial';  
+}  
+/*.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background:#4285F4;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color:#4285F4;  
+    padding: 20px;  
+}  
+label{  
+    color:white;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color:white;
+    background-color: blue;  
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  */
+
+
+
+
+/* new css for header */
+
+.header{
+
+    width:100%;
+    height: auto;
+    background-color:#4285F4;
+}
+.img_text{
+    text-align: center;
+}
+.img_text h1{
+    color: #fff;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+.img_text img{
+    width:10%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* form css */
+
+form{
+    margin: 70px auto;
+    width: 40%;
+    text-align: center;
+    padding-top: 50px;
+    background-color:#4285F4;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px #000000;
+
+   
+}
+.form h1{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+input[type="name"],input[type="password"]
+{
+    width:55%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 18px;
+    margin-top: 30px;
+    background-color: transparent;
+    text-shadow: 2px 2px 4px #000000;
+}
+input[type='submit']{
+font-weight: bold;
+    color: white;
+    margin-top: 35px;
+    width: 60%;
+    padding: 9px;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+}
+::placeholder{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* 1024,768,425,375,320 */
+
+@media only screen  and (max-width:768px)
+{
+    form{
+        width: 55%;
+    }
+}
+@media only screen  and (max-width:425px)
+{
+    input[type="email"],input[type="password"]
+{
+    width: 50%;
+
+
+}
+.img_text img{
+    width:20%; 
+}
+.img_text h1{
+    font-size: 18px;
+}
+form{
+    width: 100%;
+}
+
+
+
+}
+
+</style>
+<body>
+    <!-- <center> -->
+    <!-- <div class=color>
+       
+        <div class="img">
+        <img src="https://lietonline.netlify.app/static/media/lendi_logo_p.da607035.png" alt="lendi:)" width=" 60" height="60"  >
+        <h1> Lendi Online Exam</h1>
+        <i class="fas fa-user-tie"><a href="admin.html">  admin</a></i>
+        
+        
+       
+        
+    </div>
+</center> -->
+
+<!-- header -->
+
+<div class="header">
+
+
+    <div class="img_text">
+        <img src="https://lietonline.netlify.app/static/media/lendi_logo_p.da607035.png" alt="lendi:)" width=" 60" height="60"  >
+        <h1> LENDI SPOT-ID CARD</h1>
+        
+
+
+    </div>
+
+
+
+
+
+</div>
+   
+<!-- <h2>Login Page</h2><br>  -->
+
+
+<div class="form">
+
+   
+
+    
+        
+    <form action="instruction.html">
+        <h1> ADMIN_LOGIN </h1>
+        <!-- <label>Email</label><br> -->
+        <input type="name" placeholder="NAME" id="txt" required><br>
+        <!-- <label>Password</label><br> -->
+        <input type="password" placeholder="Password" required><br> 
+
+        <a href="index.html" onclick="mmfun()">LOGIN</a>
+         <br>
+         
+        
+           <!--- <a href="admin.html">ADMIN-LOG</a>->
+            
+        <!-- <a href="#">forget password ?</a> -->
+      </form>
+      
+
+
+
+</div>
+
+
+  
+<!-- <div class="login">    
+    <center>
+<form id="login" action="instruction.html">    
+    <label><b>User Name     
+    </b>    
+    </label>    
+   <input type="text" name="Uname" id="Uname" placeholder="Username"   required>    
+    <br><br>    
+    <label><b>Password     
+    </b>    
+    </label>    
+   <input type="Password" name="Pass" id="Pass" placeholder="Password" required>    
+    <br><br>    
+   <a href="instruction.html">
+       
+    <input type="button" name="log" id="log" value="click" onclick="passvalues();">
+</a>        
+    <br><br>    
+     
+    
+    <br><br>    
+     
+</form>    
+</center>  -->
+
+     
+    
+</body>
+</html>

@@ -22,10 +22,10 @@ var year=document.getElementById("year")
 //var phto=document.getElementById("photo")
 
 name.innerHTML=""+iname;
-regno.innerHTML="Reg NO &nbsp &nbsp &nbsp &nbsp :"+inreg;
-dept.innerHTML= "D O B &nbsp &nbsp &nbsp &nbsp &nbsp :"+indept;
-year.innerHTML="Batch &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:"+inyear
-da.innerHTML="Department &nbsp :"+indate;
+regno.innerHTML="LIET NO &nbsp :"+inreg;
+dept.innerHTML= "D O B &nbsp &nbsp &nbsp:"+indept;
+year.innerHTML="Batch &nbsp &nbsp &nbsp :"+inyear
+da.innerHTML="QUL &nbsp &nbsp &nbsp:"+indate;
 
 //createcanvas(800,600)
 //loadimage(photo)

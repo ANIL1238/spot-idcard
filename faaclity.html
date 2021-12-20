@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot-card</title>
+    <link rel = "icon" href = 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5KTFUP6JlNM83qBZ7iRvm1sp_4n82uSlXw&usqp=CAU" 
+            type = "image/x-icon">
+    
+    <style>
+        .cardview{
+            width: 310px;
+            height: 220px;  
+            padding: 50px;
+           border: 3px solid black;
+           margin-left: 260px;
+           margin-top: 120px;
+        }
+        .mainpic{
+                 height:50px;
+                  width:395px;  
+                  margin-left: -50px;  
+                  margin-top: -90px;
+           
+
+        }
+        .addres{
+                  height:40px;
+                  width:399px;  
+                  margin-left: -40px;
+                  margin-top:20px;      
+                    
+        }
+         #down{
+           margin-top:80px;
+           margin-left: 370px;
+           height:50px;
+           width:100px;
+           color:white;
+           background-color:rgb(21, 85, 206);
+           border-radius:20px;
+
+        
+           
+         }
+         #down:hover{
+            color:black;
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(18px);
+         }
+         #main{
+           margin-left:350px;
+           
+
+         }
+         #btn{
+           margin-left:350px;
+           margin-top:30px;
+           background-color:rgb(21, 85, 206);
+           height:29px;
+           width:60px;
+           border-radius: 10px;
+
+         }
+        #btn:hover{
+          color:black;
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(18px);
+
+        }
+        #inphoto:input{
+          
+
+        }
+
+
+
+        @media print {
+  #main{
+    display:none;
+  }
+  #btn{
+    display:none;
+  }
+  #inphoto{
+    display:none;
+  }
+}
+@media print {
+  #down{
+    display:none;
+  }
+}
+   
+
+    </style>
+        <form id="main">
+            <h1>  ff Spot-id-card</h1>
+            <input type="text" id="inname" placeholder="enter name" style="width:170px; margin-top: 5px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+          
+            <input type="text" id="inreg" placeholder="enter regnumber" style="width:170px; margin-top: 10px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue; "><br>
+            <input type="taxt" id="indate" placeholder="enter dob" style="width:170px; margin-top: 10px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+            <input type="text" id="indept" placeholder="enter dept" style="width:170px; margin-top: 10px; margin-bottom:5px ; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+            <input type="text" id="inyera" placeholder="Batch" style="width:170px; margin-top: 10px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+            
+        </form>
+        <button id="btn" onClick="myfun()" >sumbit</button>
+        <input type="file" id="inphoto" style="background:aqua; "  onchange="loadImage(event)" ><br>
+        
+       <br>
+
+       <div class="cardview">
+       
+        <header >
+
+            <img src="https://www.lendi.org/images/demo/default/logo/logo.png" class="mainpic" >
+          
+        </header>
+        <hr size="3" color="green"  width="100%" height="">
+        <cneter style="color:darkgoldenrod "> FALITY ID CARD</cneter>     
+        <img src="" id="imgDisplayed"  style="width:105px; height:140px; float:left ; margin-top: 15px; margin-left: -25px;">
+        
+        
+        <div   style="margin-left: 24px;"> 
+        <ul style="list-style-type: none;"  class="ulm">
+            <p><li id="name" style="list-style-type: none; margin-left: 30px; size:20px"></li></p>
+            <p><li  id="reg"style="list-style-type: none; margin-left: 30px;"> Reg NO  &nbsp :</li></p>
+            <p><li id="dob" style="list-style-type: none; margin-left: 30px;" > </li></p>
+            <p><li id="dept" style="list-style-type: none; margin-left: 30px;" >D O B &nbsp &nbsp &nbsp:</li></p>           
+            <p><li id="year" style="list-style-type: none;margin-left: 30px;"> Batch &nbsp &nbsp &nbsp:</li></p>
+            
+       </ul>
+       </div>
+
+
+        <footer >
+           
+            <img src="lendiadress.png" class="addres">
+           
+
+           
+       </footer>
+        
+      
+    </textarea>
+    
+        
+  </div>
+       
+  <button id="down"    onclick="window.print();">PRINT</button>
+ </div>
+   
+    
+    
+    
+   
+    </body>
+   
+    <script src="falcard.js">
+    
+    </script>
+    </html>  
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -5,36 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spot-card</title>
+    <link rel = "icon" href = 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5KTFUP6JlNM83qBZ7iRvm1sp_4n82uSlXw&usqp=CAU" 
+            type = "image/x-icon">
     
     <style>
         .cardview{
-            width: 310px;
-            height: 200px;  
+            width: 334px;
+            height: 242px;  
             padding: 50px;
-           border: 3px solid black;
+           border: 2px solid black;
+           margin-top: 120px;
+           border-radius: 20px;
         }
         .mainpic{
-                 height:60px;
-                  width:410px;  
-                  margin-left: -50px;  
-                  margin-top: -100px;
-           
+
+                 height:50px;
+                  width:430px;  
+                  margin-left: -48px;  
+                  margin-top: -150px;
+      
 
         }
+        
         .addres{
-                  height:50px;
-                  width:399px;  
-                  margin-left: -80px;
-                  margin-top:-10px;
-                
-
-           
-          
-
-          
-   
-                 
+                  height:35px;
+                  width:425px;  
+                  margin-left: -45px;
+                  margin-top:-30px;   
+                  border-radius: 10px;
+                    
         }
+         #down{
+           margin-top:80px;
+           margin-left: 370px;
+           height:50px;
+           width:100px;
+           color:white;
+           background-color:rgb(21, 85, 206);
+           border-radius:20px;
+
+        
+           
+         }
+         #down:hover{
+            color:black;
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(18px);
+         }
+         #main{
+           margin-left:350px;
+           
+
+         }
+         #btn{
+           margin-left:350px;
+           margin-top:30px;
+           background-color:rgb(21, 85, 206);
+           height:29px;
+           width:60px;
+           border-radius: 10px;
+
+         }
+        #btn:hover{
+          color:black;
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(18px);
+
+        }
+        .ffbutton{
+
+               margin-left: 380px;
+               margin-top:10px;
+          
+
+        }
+        .bon{
+          background-color:rgb(21, 85, 206);
+           height:35px;
+           width:70px;
+           border-radius: 10px;
+
+            }
+            .bon:hover{
+                  color:black;
+                 background-color: #2EE59D;
+                 box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                 transform: translateY(18px);
+
+            }
+            #name{
+              size:30px 
+
+            }
+
+
+
         @media print {
   #main{
     display:none;
@@ -51,20 +119,31 @@
     display:none;
   }
 }
-   
+@media print {
+  .bon{
+    display:none;
+  }
+}
+   #ppss{
+     width:110px;
+     align-items: right;
+     padding-left: 200px;
+     margin-top:-125px
+   }
 
     </style>
         <form id="main">
-            <h1>Spot-id-card</h1>
-            <input type="text" id="inname" placeholder="enter name"><br>
-            <input type="text" id="inreg" placeholder="enter regnumber"><br>
-            <input type="taxt" id="indate" placeholder="enter date"><br>
-            <input type="text" id="indept" placeholder="enter dept"><br>
-            <input type="text" id="inyera" placeholder="NUMBER"><br>
+            <h1> Student-id-card</h1>
+            <input type="text" id="inname" placeholder="enter name" style="width:170px; margin-top: 10px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+          
+            <input type="text" id="inreg" placeholder="enter regnumber" style="width:170px; margin-top: 3px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue; "><br>
+            <input type="taxt" id="indate" placeholder="enter dob" style="width:170px; margin-top: 3px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+            <input type="text" id="indept" placeholder="enter dept" style="width:170px; margin-top: 3px; margin-bottom:5px ; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
+            <input type="text" id="inyera" placeholder="Batch" style="width:170px; margin-top: 3px; margin-bottom:5px; border-top:none; border-right:none; border-left: none; border-bottom: 3px solid blue;"><br>
             
         </form>
         <button id="btn" onClick="myfun()" >sumbit</button>
-        <input type="file" id="inphoto" style="background:aqua"  onchange="loadImage(event)" ><br>
+        <input type="file" id="inphoto" style="background:aqua; "  onchange="loadImage(event)" ><br>
         
        <br>
 
@@ -76,17 +155,23 @@
           
         </header>
         <hr size="3" color="green"  width="100%" height="">
+        <cneter style="color:brown"> STUDENT ID CARD</cneter>     
+        <img src="" id="imgDisplayed"  style="width:105px; height:145px; float:left ; margin-top: 35px; margin-left: -25px;">
 
         
-        <img src="" id="imgDisplayed"  style="width:100px; height:120px; float:left ; margin-top: 15px; margin-left: -10px;">
-        <div>
+        <div   style="margin-left: 24px;"> 
         <ul style="list-style-type: none;"  class="ulm">
-            <h5><li id="name" style="list-style-type: none;">Student Name:</li></h5>
-            <h5><li  id="reg"style="list-style-type: none;"> Reg NO:</li></h5>
+            <p><li id="name" style="list-style-type: none; margin-left: 20px;font-weight: bold ;font-size: 17px; "></li></p>
+            <p><li  id="reg"style="list-style-type: none; margin-left: 20px;"> Reg NO</li></p>
+            <p><li id="dob" style="list-style-type: none; margin-left: 20px;" > </li></p>
+            <p><li id="dept" style="list-style-type: none; margin-left: 20px;" >D O B</li></p>           
+            <p><li id="year" style="list-style-type: none;margin-left: 20px;"> Batch </li></p>
+            <img src="ffpp.png" id="ppss">
             
-            <h5><li id="dept" style="list-style-type: none;" >Branch:</li></h5>
-            <h5><li id="year" style="list-style-type: none;">Academic Year</li></h5>
-        <h5></h5>
+       </ul>
+       </div>
+
+
         <footer >
            
             <img src="lendiadress.png" class="addres">
@@ -94,18 +179,19 @@
 
            
        </footer>
-        </div>
-       
-        <button id="down"    onclick="window.print();">Download</button>
-       </div>
+        
       
     </textarea>
     
         
-      
-   
-    
-    
+  </div>
+       
+  <button id="down"    onclick="window.print();">PRINT</button>
+ </div>
+   <div class="ffbutton">
+   <a href="faaclity.html"> <button class="bon"> faclaity id</button></a>
+
+   </div>
     
    
     </body>
@@ -114,7 +200,7 @@
     
     </script>
     </html>  
-    <title>Document</title>
+    
 </head>
 <body>
     
